@@ -4,7 +4,7 @@ import { AI } from '@/lib/chat/actions'
 import { getMissingKeys } from '@/app/actions'
 
 export const metadata = {
-  title: 'Next.js AI Chatbot'
+  title: 'RainAI Chatbot'
 }
 
 export default async function IndexPage() {

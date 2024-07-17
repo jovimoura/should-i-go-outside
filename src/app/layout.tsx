@@ -14,7 +14,7 @@ export const metadata = {
     default: 'RainAI',
     template: `%s - RainAI Chatbot`
   },
-  description: 'An AI-powered chatbot template built with Next.js and Vercel.',
+  description: 'An AI-powered chatbot template built with Next.js and Shadcn.',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',

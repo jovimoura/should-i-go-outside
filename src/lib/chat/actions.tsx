@@ -174,6 +174,27 @@ async function submitUserMessage(content: string) {
       return textNode
     },
     tools: {
+      getCurrentTemperature: {
+        description: 'Get the current temperature for a specific location',
+        parameters: z.object({
+          properties: z.array(
+            z.object({
+              location: z.string().describe('The city and state, e.g., San Francisco, CA'),
+              unit: z.number().describe("The temperature unit to use. Infer this from the user's location."),
+            })
+          )
+        })
+      },
+      getRainProbability: {
+        description: 'Get the probability of rain for a specific location',
+        parameters: z.object({
+          properties: z.array(
+            z.object({
+              location: z.string().describe('The city and state, e.g., San Francisco, CA'),
+            })
+          )
+        })
+      },
       listStocks: {
         description: 'List three imaginary stocks that are trending.',
         parameters: z.object({
